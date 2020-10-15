@@ -26,6 +26,7 @@ def perform
       user1_choice = my_game.player_choice(user1) 
       my_game.take_position(user1_choice, user1.marker)
       sleep 1
+      system "clear"
       my_game.board.get_board_game
       turn -= 1
       break if turn == 0
@@ -37,6 +38,7 @@ def perform
       user2_choice = my_game.player_choice(user2)
       my_game.take_position(user2_choice, user2.marker)
       sleep 1
+      system "clear"
       my_game.board.get_board_game
       turn -= 1
       break if turn == 0
